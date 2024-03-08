@@ -1,2 +1,2 @@
 #!/bin/bash
-docker compose exec basededatos bash -c "mysql -u user -p minhabd < /backup/backup.sql"
+docker compose exec bd bash -c "mysql -u root -p  prestashop < docker-entrypoint-initdb.d/backup.sql/backup.sql"

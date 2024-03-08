@@ -14,7 +14,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./bd/backup.sql:/docker-entrypoint-initdb.d/backup.sql
+      - ./bd/:/docker-entrypoint-initdb.d/backup.sql
       - datos:/var/lib/mysql
 volumes:
   datos:
